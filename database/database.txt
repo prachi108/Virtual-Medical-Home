@@ -1,0 +1,193 @@
+create table login(
+id varchar(30),
+password varchar(30),
+userType varchar(30),
+status varchar(10),
+lastLoginDate date
+);
+
+create table specialization(
+specializationName varchar(50),
+description varchar(200)
+);
+
+create table doctor_spacility(
+id varchar(30),
+specialization varchar(50)
+);
+
+create table patient_profile(
+id varchar(30),
+name varchar(50),
+fname varchar(50),
+nationality varchar(10),
+dob date,
+gender varchar(6),
+address1 varchar(300),
+city1 varchar(30),
+state1 varchar(30),
+country1 varchar(30),
+zip1 integer(6),
+landline1 varchar(20),
+mobile1 varchar(15),
+address2 varchar(300),
+city2 varchar(30),
+state2 varchar(30),
+country2 varchar(30),
+zip2 integer(6),
+landline2 varchar(20),
+mobile2 varchar(15),
+bloodGroup varchar(4),
+qualification varchar(15),
+occupation varchar(20),
+email varchar(30),
+alternateEmail varchar(30),
+registrationDate date,
+createdBy varchar(30)
+);
+
+create table doctor_profile(
+id varchar(30),
+name varchar(50),
+fname varchar(50),
+nationality varchar(10),
+dob date,
+gender varchar(6),
+address1 varchar(300),
+city1 varchar(30),
+state1 varchar(30),
+country1 varchar(30),
+zip1 integer(6),
+landline1 varchar(20),
+mobile1 varchar(15),
+address2 varchar(300),
+city2 varchar(30),
+state2 varchar(30),
+country2 varchar(30),
+zip2 integer(6),
+landline2 varchar(20),
+mobile2 varchar(15),
+bloodGroup varchar(4),
+qualification varchar(30),
+experience varchar(30),
+email varchar(30),
+alternateEmail varchar(30),
+registrationDate date,
+createdBy varchar(30)
+);
+
+create table kiosk_profile(
+id varchar(30),
+name varchar(50),
+fname varchar(50),
+nationality varchar(20),
+dob date,
+gender varchar(6),
+address1 varchar(300),
+city1 varchar(30),
+state1 varchar(30),
+country1 varchar(30),
+zip1 integer(6),
+landline1 varchar(20),
+mobile1 varchar(15),
+address2 varchar(300),
+city2 varchar(30),
+state2 varchar(30),
+country2 varchar(30),
+zip2 integer(6),
+landline2 varchar(20),
+mobile2 varchar(15),
+bloodGroup varchar(4),
+qualification varchar(15),
+occupation varchar(20),
+email varchar(30),
+alternateEmail varchar(30),
+registrationDate date,
+createdBy varchar(30)
+);
+
+create table admin_profile(
+id varchar(30),
+name varchar(50),
+fname varchar(50),
+nationality varchar(10),
+dob date,
+gender varchar(6),
+address1 varchar(300),
+city1 varchar(30),
+state1 varchar(30),
+country1 varchar(30),
+zip1 integer(6),
+landline1 varchar(20),
+mobile1 varchar(15),
+address2 varchar(300),
+city2 varchar(30),
+state2 varchar(30),
+country2 varchar(30),
+zip2 integer(6),
+landline2 varchar(20),
+mobile2 varchar(15),
+bloodGroup varchar(4),
+qualification varchar(15),
+occupation varchar(20),
+email varchar(30),
+alternateEmail varchar(30),
+registrationDate date,
+createdBy varchar(30)
+);
+
+create table appointment(
+appointmentId int,
+patientId varchar(30),
+doctorId varchar(30),
+kioskId varchar(30),
+appointmentDate date,
+allotmentDate date,
+appointmentRequestedDate date,
+requestDate date,
+description varchar(1000),
+remark varchar(1000),
+appointmentStatus varchar(15)
+);
+
+create table complaint(
+complaintId int,
+senderId varchar(30),
+receiverId varchar(30),
+complaintDate date,
+subject varchar(100),
+description varchar(1000),
+status varchar(15),
+result varchar(1000)
+);
+
+create table complaintReply(
+replyId int,
+senderId varchar(30),
+receiverId varchar(30),
+complaintId int,
+replyDetail varchar(1000),
+replyDate date
+);
+
+create table patientHistory(
+transactionId int,
+patientId varchar(30),
+doctorId varchar(30),
+symptoms varchar(1000),
+tests varchar(1000),
+observation varchar(1000),
+prescription varchar(1000),
+description varchar(1000),
+createDate date,
+status varchar(15)
+);
+
+create table feedback(
+id int,
+patientId varchar(30),
+feedback varchar(100),
+feedbackDate date
+);
+
+

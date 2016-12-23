@@ -1,0 +1,51 @@
+body   
+{
+   /* background: #ffcc66;*/
+    font-size: .80em; /* 10px=1em*/
+    font-family: "Helvetica Neue", "Lucida Grande", "Segoe UI", Arial, Helvetica, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    color: #696969;
+	/*background-image:url(../Image/kiosk3.jpg);*/
+	background-repeat:repeat;
+}
+
+.page
+{
+    width: 960px;
+    background-color: #fff;
+    margin: 20px auto 0px auto;
+    border: 1px solid #496077;
+}
+
+.footer
+{
+    color: #4e5766;
+    padding: 8px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: normal;
+}
+
+.heading
+{
+	color:#990033;
+	
+	font-size:14px;
+}
+
+.error
+{
+	color:Red;
+	font-size:14px;
+	letter-spacing:1px;
+}
+
+.lblHeading
+{
+	color:#339966;
+	font-size:30px;
+	font-weight:bold;
+	letter-spacing:1px;
+	text-align:center;
+}
